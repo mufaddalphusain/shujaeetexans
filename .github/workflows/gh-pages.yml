@@ -10,11 +10,10 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
-          publish_branch: gh-pages
-          allow_empty_commit: true
-          user_name: github-actions[bot]
-          user_email: github-actions[bot]@users.noreply.github.com
+          branch: gh-pages
+          folder: ./
+          clean: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit_message: 'Deploy site via GitHub Actions'
