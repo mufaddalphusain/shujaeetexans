@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact Us - Shujaee Texans</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1 class="brand">Shujaee Texans</h1>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="news.html">News</a>
+          <a href="team.html">Team</a>
+          <a href="fixtures.html">Fixtures</a>
+          <a href="shop.html">Shop</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <h2>Contact Us</h2>
+      <p>For enquiries, please email <a href="mailto:info@shujaeetexans.example">info@shujaeetexans.example</a> or use the form below.</p>
+      <!-- Netlify-ready contact form (works when site is deployed to Netlify) -->
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <p style="display:none">
+          <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+        </p>
+        <label>Name<br><input required type="text" name="name"></label><br><br>
+        <label>Email<br><input required type="email" name="email"></label><br><br>
+        <label>Message<br><textarea required name="message" rows="5"></textarea></label><br><br>
+        <button type="submit">Send Message</button>
+      </form>
+    </main>
+    <footer class="site-footer">
+      <div class="container">&copy; 2026 Shujaee Texans</div>
+    </footer>
+  </body>
+</html>
